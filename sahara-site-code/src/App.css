@@ -1,0 +1,19 @@
+/* this will set the entire sites background color */
+.site{
+    background-color:#e2e1df;
+}
+
+/* this will change the style of the footer and its components */
+.footer{
+    display: block;
+    height: 10vh;
+    background-color:#e2e1df;
+    text-align: center;
+    align-content: center;
+}
+
+#footerInfo{
+    color: black;
+    font-size: 20px;
+}
+

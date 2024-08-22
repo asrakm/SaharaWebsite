@@ -1,0 +1,52 @@
+#nav-container{
+    background-color:#e2e1df;
+    text-align: center;
+}
+
+/* update the logo images size and position */
+#logoImg{
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    left: 2vw;
+    width: 60vh;
+    height: auto;
+}
+
+/* update how content is spread horizontally */
+#NavMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vh;
+}
+
+/* updates the design of the nav link */
+.nav-links{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    
+    padding-left: 3vw;
+    
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 0px;
+}
+
+.nav-links.active{
+    font-weight: 600;
+    color: #9F7928;
+    text-decoration: underline;
+}
+
+/* edit the number and social media links on the navbar */
+#phoneNumber{
+    position: relative;
+    width: 8vw;
+}
+
+#fbLink{
+    position: relative;
+    width: 1.75vw;
+}

@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+
+/* will edit how the images are being displayed */
+.cs-gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-left: 12%; padding-right: 12%; padding-top: 1%; padding-bottom: 4%;
+}
+
+.gallery-images img {
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    width: 18vw;
+    height: 18vw;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* will edit how thr images are shown based on screen size */
+@media (max-width: 1200px) {
+    .cs-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .cs-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .cs-gallery {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+/* will edit the titles */
+.cs-content{
+    padding-top: 1%;
+    padding-left: 12%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cs-topper{
+    font-size: 20px;
+    color: darkgray;
+}
+
+
+/* will edit the modal of the enlarged images */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#largePic{
+    height: 75vh;
+    width: auto;
+}
+
+#leftArrow{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#rightArrow{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
